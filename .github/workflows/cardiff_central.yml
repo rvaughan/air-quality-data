@@ -25,10 +25,10 @@ jobs:
     - name: Install Python dependencies
       run: |
         pip install -r requirements.txt
-    - name: Fetch latest UK data
+    - name: Fetch latest Cardiff Central data
       run: |-
         cd cardiff_central
-        wget -q -O CARD_2020.csv https://uk-air.defra.gov.uk/datastore/data_files/site_data/CARD_2020.csv
+        wget -q -O CARD_2020.csv https://uk-air.defra.gov.uk/datastore/data_files/site_data/CARD_2021.csv
     - name: Commit and push data if it changed
       run: |-
         git config user.name "Automated"
