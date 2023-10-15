@@ -3,7 +3,7 @@ name: Cardiff Central Air Quality Data
 on:
   repository_dispatch:
   schedule:
-    - cron:  '00 * * * *'
+    - cron:  '00 2 * * *'
 
 jobs:
   scheduled:
