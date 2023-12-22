@@ -28,7 +28,7 @@ jobs:
     - name: Fetch latest Cardiff Central data
       run: |-
         cd cardiff_central
-        wget -q -O CARD_2022.csv https://uk-air.defra.gov.uk/datastore/data_files/site_data/CARD_2022.csv
+        #wget -q -O CARD_2022.csv https://uk-air.defra.gov.uk/datastore/data_files/site_data/CARD_2022.csv
         wget -q -O CARD_2023.csv https://uk-air.defra.gov.uk/datastore/data_files/site_data/CARD_2023.csv
     - name: Commit and push data if it changed
       run: |-
