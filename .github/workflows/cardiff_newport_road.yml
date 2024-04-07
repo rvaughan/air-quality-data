@@ -15,7 +15,7 @@ jobs:
       uses: actions/setup-python@v5
       with:
         python-version: 3.9
-    - uses: actions/cache@v3
+    - uses: actions/cache@v4
       name: Configure pip caching
       with:
         path: ~/.cache/pip
@@ -29,6 +29,7 @@ jobs:
       run: |-
         cd cardiff_newport_road
         wget -O CNPR_NO_2023.csv https://uk-air.defra.gov.uk/datastore/data_files/site_pol_data/CNPR_NO_2023.csv
+        wget -O CNPR_NO_2024.csv https://uk-air.defra.gov.uk/datastore/data_files/site_pol_data/CNPR_NO_2024.csv
     - name: Commit and push data if it changed
       run: |-
         git config user.name "Automated"
