@@ -29,7 +29,9 @@ jobs:
       run: |-
         cd cardiff_central
         #wget -q -O CARD_2022.csv https://uk-air.defra.gov.uk/datastore/data_files/site_data/CARD_2022.csv
-        wget -q -O CARD_2023.csv https://uk-air.defra.gov.uk/datastore/data_files/site_data/CARD_2023.csv
+        # wget -q -O CARD_2023.csv https://uk-air.defra.gov.uk/datastore/data_files/site_data/CARD_2023.csv
+        wget -q -O CARD_2024.csv https://uk-air.defra.gov.uk/datastore/data_files/site_data/CARD_2024.csv
+        wget -q -O CARD_2025.csv https://uk-air.defra.gov.uk/datastore/data_files/site_data/CARD_2025.csv
     - name: Commit and push data if it changed
       run: |-
         git config user.name "Automated"

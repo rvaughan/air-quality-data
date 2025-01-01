@@ -28,7 +28,9 @@ jobs:
     - name: Fetch latest Cardiff Newport Road data
       run: |-
         cd cardiff_newport_road
-        wget -O CNPR_NO_2023.csv https://uk-air.defra.gov.uk/datastore/data_files/site_pol_data/CNPR_NO_2023.csv
+        # wget -O CNPR_NO_2023.csv https://uk-air.defra.gov.uk/datastore/data_files/site_pol_data/CNPR_NO_2023.csv
+        wget -O CNPR_NO_2024.csv https://uk-air.defra.gov.uk/datastore/data_files/site_pol_data/CNPR_NO_2024.csv
+        wget -O CNPR_NO_2025.csv https://uk-air.defra.gov.uk/datastore/data_files/site_pol_data/CNPR_NO_2025.csv
     - name: Commit and push data if it changed
       run: |-
         git config user.name "Automated"
